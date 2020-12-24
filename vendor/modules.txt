@@ -1,0 +1,2 @@
+# github.com/astaxie/beego v1.12.3
+github.com/astaxie/beego/config
