@@ -1,5 +1,9 @@
 # github.com/astaxie/beego v1.12.3
 github.com/astaxie/beego/config
+# github.com/jinzhu/gorm v1.9.16
+github.com/jinzhu/gorm
+# github.com/jinzhu/inflection v1.0.0
+github.com/jinzhu/inflection
 # go.uber.org/atomic v1.6.0
 go.uber.org/atomic
 # go.uber.org/multierr v1.5.0
