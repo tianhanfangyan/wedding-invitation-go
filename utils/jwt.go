@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	jwtSecret        = []byte(GetConf().String("app::jwt_secret"))
+	jwtSecret        []byte
 	TokenExpired     = errors.New("令牌授权过期")
 	TokenNotValidYet = errors.New("令牌没有激活")
 	TokenMalformed   = errors.New("令牌未知格式")
@@ -20,6 +20,10 @@ type CustomClaims struct {
 	Password   string
 	BufferTime int64
 	jwt.StandardClaims
+}
+
+func InitJwtSecret() {
+	jwtSecret = []byte(GetConf().String("app::jwt_secret"))
 }
 
 // 生成token
