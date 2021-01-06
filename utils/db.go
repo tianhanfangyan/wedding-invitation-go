@@ -16,7 +16,7 @@ func InitDB() error {
 	parameters := GetConf().String("db::parameters")
 
 	mysqlUrl := DSN(user, password, host, port, dbName, parameters)
-	db, err := gorm.Open(mysqlUrl)
+	db, err := gorm.Open("mysql", mysqlUrl)
 	if err != nil {
 		return err
 	}
