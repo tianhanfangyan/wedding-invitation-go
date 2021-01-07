@@ -8,7 +8,7 @@ func GetPage(pageNumber, pageSize int) (int, int) {
 	if pageSize != 0 {
 		pageSizeResult = pageSize
 	} else {
-		pageSize = 10
+		pageSizeResult = 10
 	}
 
 	// 页数
