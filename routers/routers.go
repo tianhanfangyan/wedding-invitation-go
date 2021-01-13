@@ -13,5 +13,13 @@ func InitRouters() *gin.Engine {
 
 	router.POST("/api/v1/admin/login", controllers.Login)
 
+	adminRouter := router.Group("/api/v1/admin")
+	adminRouter.Use(middleware.JWTAuth())
+
+	adminRouter.POST("/userinfo", controllers.AddNewComerInfo)
+	adminRouter.DELETE("/userinfo", controllers.DeleteNewComerInfo)
+	adminRouter.GET("/userinfo", controllers.GetNewComerInfo)
+	adminRouter.PUT("/userinfo", controllers.ModifyNewComerInfo)
+
 	return router
 }
