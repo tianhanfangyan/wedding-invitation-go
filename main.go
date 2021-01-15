@@ -32,6 +32,12 @@ func main() {
 	}
 	log.Println("config init")
 
+	if err := utils.InitStatic(); err != nil {
+		log.Println(err)
+		return
+	}
+	log.Println("path init")
+
 	// jwtSecret初始化
 	utils.InitJwtSecret()
 	log.Println("jwtSecret init")

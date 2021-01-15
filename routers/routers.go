@@ -24,6 +24,7 @@ func InitRouters() *gin.Engine {
 	apiRouter := router.Group("/api/v1/user")
 	apiRouter.Use(middleware.JWTAuth())
 
+	apiRouter.Static("/assets", "./assets")
 	apiRouter.GET("/userinfo/", controllers.GetNewComerInfoByUserId)
 	apiRouter.GET("/hotel", controllers.GetHotelLocationByUserId)
 
