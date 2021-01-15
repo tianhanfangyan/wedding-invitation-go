@@ -21,5 +21,11 @@ func InitRouters() *gin.Engine {
 	adminRouter.GET("/userinfo", controllers.GetNewComerInfo)
 	adminRouter.PUT("/userinfo", controllers.ModifyNewComerInfo)
 
+	apiRouter := router.Group("/api/v1/user")
+	apiRouter.Use(middleware.JWTAuth())
+
+	apiRouter.GET("/userinfo/", controllers.GetNewComerInfoByUserId)
+	apiRouter.GET("/hotel", controllers.GetHotelLocationByUserId)
+
 	return router
 }
