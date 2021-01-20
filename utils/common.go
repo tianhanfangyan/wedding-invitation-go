@@ -19,6 +19,16 @@ func StringToInt64(data string) int64 {
 	return num
 }
 
+/* 整形64转字符串 */
+func Int64ToString(data int64) string {
+	return strconv.FormatInt(data, 10)
+}
+
+/* 整形转字符串 */
+func IntToString(data int) string {
+	return strconv.Itoa(data)
+}
+
 /* DSN数据库连接串 */
 func DSN(user, password, host, port, dbName, parameters string) string {
 	return fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?%s", user, password, host, port, dbName, parameters)
