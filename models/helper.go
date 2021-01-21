@@ -33,7 +33,16 @@ type Hotels struct {
 type Comments struct {
 	Id       int64  `gorm:"AUTO_INCREMENT;primary_key"` // 自增ID
 	BlessMsg string `gorm:"type:text"`                  // 祝福文字
+	OpenId   string `gorm:"type:varchar(255)"`          // 微信openid
+	UserId   int64  `gorm:"type:not null"`              // 外键
+}
+
+// 微信用户信息表
+type WxUsers struct {
+	Id       int64  `gorm:"AUTO_INCREMENT;primary_key"` // 自增ID
+	OpenId   string `gorm:"type:varchar(255)"`          // 微信openid
+	UnionId  string `gorm:"type:varchar(255)"`          // 微信开放平台union_id
 	NickName string `gorm:"type:text"`                  // 微信别名
 	WxFace   string `gorm:"type:text"`                  // 微信头像
-	UserId   int64  `gorm:"type:not null"`              // 外键
+	Mobile   string `gorm:"type:varchar(22)"`           // 手机号码
 }

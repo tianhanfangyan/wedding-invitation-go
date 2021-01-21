@@ -23,7 +23,25 @@ type NewComerInfoRequest struct {
 // 新人祝福评论请求值
 type NewComerCommentRequest struct {
 	UserId   int64  `json:"user_id"`   // 用户ID
+	OpenId   string `json:"open_id"`   // 微信openid
 	BlessMsg string `json:"bless_msg"` // 祝福文字
+}
+
+// 微信用户信息请求值
+type WxUserInfoRequest struct {
+	OpenId   string `json:"open_id"`   // 微信openid
+	UnionId  string `json:"union_id"`  // 微信开放平台union_id
 	NickName string `json:"nick_name"` // 微信别名
 	WxFace   string `json:"wx_face"`   // 微信头像
+	Gender   int    `json:"gender"`    // 性别
+	Province string `json:"province"`  // 省份
+	City     string `json:"city"`      // 城市
+	Mobile   string `json:"mobile"`    // 手机号码
+}
+
+// 微信用户加密数据请求值
+type WxEncryptedDataRequest struct {
+	SessionKey    string
+	EncryptedData string
+	Iv            string
 }
