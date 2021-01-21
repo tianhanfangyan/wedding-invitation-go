@@ -28,6 +28,8 @@ func InitRouters() *gin.Engine {
 	apiRouter.GET("/userinfo/", controllers.GetNewComerInfoByUserId)
 	apiRouter.GET("/hotel", controllers.GetHotelLocationByUserId)
 	apiRouter.GET("/images", controllers.GetNewComerIndexImageByUserID)
+	apiRouter.GET("/comments", controllers.GetBlessCommentsByUserId)
+	apiRouter.POST("/comments", controllers.AddBlessCommentsByUserId)
 
 	return router
 }
