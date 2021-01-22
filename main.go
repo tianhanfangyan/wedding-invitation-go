@@ -56,6 +56,9 @@ func main() {
 	}
 	log.Println("db init")
 
+	utils.InitWechatMiniProgram()
+	log.Println("mini init")
+
 	// 设置gin运行模式
 	gin.SetMode(utils.GetConf().String("app::runmode"))
 
