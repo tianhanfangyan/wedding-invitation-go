@@ -1,7 +1,11 @@
 # github.com/astaxie/beego v1.12.3
 github.com/astaxie/beego/config
+# github.com/bradfitz/gomemcache v0.0.0-20190913173617-a41fca850d0b
+github.com/bradfitz/gomemcache/memcache
 # github.com/dgrijalva/jwt-go v3.2.0+incompatible
 github.com/dgrijalva/jwt-go
+# github.com/fatih/structs v1.1.0
+github.com/fatih/structs
 # github.com/gin-contrib/sse v0.1.0
 github.com/gin-contrib/sse
 # github.com/gin-contrib/zap v0.0.1
@@ -23,6 +27,9 @@ github.com/go-playground/validator/v10
 github.com/go-sql-driver/mysql
 # github.com/golang/protobuf v1.4.2
 github.com/golang/protobuf/proto
+# github.com/gomodule/redigo v2.0.0+incompatible
+github.com/gomodule/redigo/redis
+github.com/gomodule/redigo/internal
 # github.com/jinzhu/gorm v1.9.16
 github.com/jinzhu/gorm/dialects/mysql
 github.com/jinzhu/gorm
@@ -30,6 +37,8 @@ github.com/jinzhu/gorm
 github.com/jinzhu/inflection
 # github.com/json-iterator/go v1.1.10
 github.com/json-iterator/go
+# github.com/konsorten/go-windows-terminal-sequences v1.0.3
+github.com/konsorten/go-windows-terminal-sequences
 # github.com/leodido/go-urn v1.2.0
 github.com/leodido/go-urn
 # github.com/mattn/go-isatty v0.0.12
@@ -38,6 +47,54 @@ github.com/mattn/go-isatty
 github.com/modern-go/concurrent
 # github.com/modern-go/reflect2 v1.0.1
 github.com/modern-go/reflect2
+# github.com/silenceper/wechat/v2 v2.0.4
+github.com/silenceper/wechat/v2
+github.com/silenceper/wechat/v2/cache
+github.com/silenceper/wechat/v2/miniprogram
+github.com/silenceper/wechat/v2/miniprogram/config
+github.com/silenceper/wechat/v2/officialaccount
+github.com/silenceper/wechat/v2/officialaccount/config
+github.com/silenceper/wechat/v2/openplatform
+github.com/silenceper/wechat/v2/openplatform/config
+github.com/silenceper/wechat/v2/pay
+github.com/silenceper/wechat/v2/pay/config
+github.com/silenceper/wechat/v2/credential
+github.com/silenceper/wechat/v2/miniprogram/analysis
+github.com/silenceper/wechat/v2/miniprogram/auth
+github.com/silenceper/wechat/v2/miniprogram/context
+github.com/silenceper/wechat/v2/miniprogram/encryptor
+github.com/silenceper/wechat/v2/miniprogram/message
+github.com/silenceper/wechat/v2/miniprogram/qrcode
+github.com/silenceper/wechat/v2/miniprogram/subscribe
+github.com/silenceper/wechat/v2/miniprogram/tcb
+github.com/silenceper/wechat/v2/officialaccount/basic
+github.com/silenceper/wechat/v2/officialaccount/broadcast
+github.com/silenceper/wechat/v2/officialaccount/context
+github.com/silenceper/wechat/v2/officialaccount/datacube
+github.com/silenceper/wechat/v2/officialaccount/device
+github.com/silenceper/wechat/v2/officialaccount/js
+github.com/silenceper/wechat/v2/officialaccount/material
+github.com/silenceper/wechat/v2/officialaccount/menu
+github.com/silenceper/wechat/v2/officialaccount/message
+github.com/silenceper/wechat/v2/officialaccount/oauth
+github.com/silenceper/wechat/v2/officialaccount/server
+github.com/silenceper/wechat/v2/officialaccount/user
+github.com/silenceper/wechat/v2/openplatform/account
+github.com/silenceper/wechat/v2/openplatform/context
+github.com/silenceper/wechat/v2/openplatform/miniprogram
+github.com/silenceper/wechat/v2/openplatform/officialaccount
+github.com/silenceper/wechat/v2/pay/notify
+github.com/silenceper/wechat/v2/pay/order
+github.com/silenceper/wechat/v2/pay/refund
+github.com/silenceper/wechat/v2/util
+github.com/silenceper/wechat/v2/openplatform/miniprogram/basic
+github.com/silenceper/wechat/v2/openplatform/miniprogram/component
+github.com/silenceper/wechat/v2/openplatform/officialaccount/js
+github.com/silenceper/wechat/v2/openplatform/officialaccount/oauth
+# github.com/sirupsen/logrus v1.6.0
+github.com/sirupsen/logrus
+# github.com/spf13/cast v1.3.1
+github.com/spf13/cast
 # github.com/ugorji/go/codec v1.1.7
 github.com/ugorji/go/codec
 # go.uber.org/atomic v1.6.0
@@ -51,6 +108,9 @@ go.uber.org/zap/internal/bufferpool
 go.uber.org/zap/buffer
 go.uber.org/zap/internal/color
 go.uber.org/zap/internal/exit
+# golang.org/x/crypto v0.0.0-20200510223506-06a226fb4e37
+golang.org/x/crypto/pkcs12
+golang.org/x/crypto/pkcs12/internal/rc2
 # golang.org/x/sys v0.0.0-20200615200032-f1bc736245b1
 golang.org/x/sys/unix
 golang.org/x/sys/internal/unsafeheader
